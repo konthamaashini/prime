@@ -22,11 +22,11 @@ def generate_launch_description():
     # Define package and file paths
     package_name = 'fish_hpurv'
     xacro_file = 'urdf/fish_hpurv_macro.urdf.xacro'
-    world_file = 'worlds/ocean_waves.world'
+    world_file = 'model/hotel.world'
 
     # Paths to model and world files
     model_file_path = os.path.join(get_package_share_directory(package_name), xacro_file)
-    world_file_path = os.path.join(get_package_share_directory('uuv_gazebo_worlds'), world_file)
+    world_file_path = os.path.join(get_package_share_directory('butler'), world_file)
 
     # Process the xacro file to generate the robot description (URDF)
     robot_description = xacro.process_file(model_file_path).toxml()
