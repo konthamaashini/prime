@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<robot name="fish_hpurv">
+<robot name="robot">
     <link name="link_base">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="10"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -12,133 +12,13 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_8.stl"/>
       </geometry>
       <material name="part_8_material">
-        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_8.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_14.stl"/>
-      </geometry>
-      <material name="part_14_material">
-        <color rgba="0.615686 0.811765 0.929412 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_14.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_20.stl"/>
-      </geometry>
-      <material name="part_20_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_20.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_6.stl"/>
-      </geometry>
-      <material name="part_6_material">
-        <color rgba="0.615686 0.811765 0.929412 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_6.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_18.stl"/>
-      </geometry>
-      <material name="part_18_material">
-        <color rgba="0.768627 0.886275 0.952941 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_18.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_9.stl"/>
-      </geometry>
-      <material name="part_9_material">
-        <color rgba="0.917647 0.917647 0.917647 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_9.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_16.stl"/>
-      </geometry>
-      <material name="part_16_material">
-        <color rgba="0.231373 0.380392 0.705882 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_16.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_5.stl"/>
-      </geometry>
-      <material name="part_5_material">
-        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_5.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2.stl"/>
-      </geometry>
-      <material name="part_2_material">
-        <color rgba="0.768627 0.886275 0.952941 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2.stl"/>
       </geometry>
     </collision>
         <visual>
@@ -147,7 +27,7 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_4.stl"/>
       </geometry>
       <material name="part_4_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
       </material>
     </visual>
     <collision>
@@ -162,7 +42,7 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_11.stl"/>
       </geometry>
       <material name="part_11_material">
-        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
       </material>
     </visual>
     <collision>
@@ -174,46 +54,31 @@
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_10.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_5.stl"/>
       </geometry>
-      <material name="part_10_material">
-        <color rgba="0.768627 0.886275 0.952941 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_10.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_15.stl"/>
-      </geometry>
-      <material name="part_15_material">
+      <material name="part_5_material">
         <color rgba="0.647059 0.647059 0.647059 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_15.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_5.stl"/>
       </geometry>
     </collision>
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_3.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_14.stl"/>
       </geometry>
-      <material name="part_3_material">
-        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      <material name="part_14_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_3.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_14.stl"/>
       </geometry>
     </collision>
         <visual>
@@ -222,7 +87,7 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_7.stl"/>
       </geometry>
       <material name="part_7_material">
-        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
     <collision>
@@ -234,31 +99,46 @@
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_17.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_6.stl"/>
       </geometry>
-      <material name="part_17_material">
+      <material name="part_6_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_6.stl"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>t
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_15.stl"/>
+      </geometry>
+      <material name="part_15_material">
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_17.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_15.stl"/>
       </geometry>
     </collision>
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_9.stl"/>
       </geometry>
-      <material name="part_1_material">
-        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      <material name="part_9_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_9.stl"/>
       </geometry>
     </collision>
         <visual>
@@ -267,7 +147,7 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_13.stl"/>
       </geometry>
       <material name="part_13_material">
-        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
       </material>
     </visual>
     <collision>
@@ -276,109 +156,48 @@
         <mesh filename="$(find fish_hpurv)/meshes/assets/part_13.stl"/>
       </geometry>
     </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_19.stl"/>
-      </geometry>
-      <material name="part_19_material">
-        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_19.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_12.stl"/>
-      </geometry>
-      <material name="part_12_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_12.stl"/>
-      </geometry>
-    </collision>
   </link>
     <link name="link_hip_l">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.1"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="10"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2__2.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2.stl"/>
       </geometry>
-      <material name="part_2_2_material">
+      <material name="part_2_material">
         <color rgba="0.231373 0.380392 0.705882 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2__2.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_2.stl"/>
       </geometry>
     </collision>
         <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_3__2.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1.stl"/>
       </geometry>
-      <material name="part_3_2_material">
-        <color rgba="0.917647 0.917647 0.917647 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_3__2.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_4__2.stl"/>
-      </geometry>
-      <material name="part_4_2_material">
-        <color rgba="0.768627 0.886275 0.952941 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_4__2.stl"/>
-      </geometry>
-    </collision>
-        <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1__2.stl"/>
-      </geometry>
-      <material name="part_1_2_material">
+      <material name="part_1_material">
         <color rgba="0.647059 0.647059 0.647059 1.0"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1__2.stl"/>
+        <mesh filename="$(find fish_hpurv)/meshes/assets/part_1.stl"/>
       </geometry>
     </collision>
   </link>
-    <joint name="joint12" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <joint name="joint12" type="continuous">
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
     <parent link="link_base"/>
     <child link="link_hip_l"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10"/>
   </joint>
 </robot>

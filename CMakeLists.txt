@@ -13,7 +13,7 @@ find_package(xacro REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 install(
-  DIRECTORY launch urdf config meshes worlds models
+  DIRECTORY launch urdf config mesh worlds models
   DESTINATION share/${PROJECT_NAME}
 )
 install(
